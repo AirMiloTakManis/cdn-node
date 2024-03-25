@@ -1,5 +1,7 @@
 {
   "version": 2,
+  "installCommand": "npm install",
+  "outputDirectory": "dist",
   "builds": [
     {
       "src": "./app.js",
