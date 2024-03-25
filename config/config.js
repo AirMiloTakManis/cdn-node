@@ -10,6 +10,7 @@ module.exports = {
     ssl: true,
   },
   test: {
+    url: process.env.DATABASE_URL,
     dialect: process.env.DATABASE_ENGINE,
     host: process.env.DATABASE_HOST,
     port: process.env.DATABASE_PORT,
@@ -19,6 +20,7 @@ module.exports = {
     logging: (process.env.APPLICATION_DEBUG === 'true'),
     dialectOptions: {
       decimalNumbers: true,
+      ssl: { require: true, rejectUnauthorized: false },
     },
   },
   production: {
