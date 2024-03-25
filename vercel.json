@@ -1,7 +1,6 @@
 {
   "version": 2,
   "installCommand": "npm install",
-  "developmentCommand": "npx nodemom",
   "outputDirectory": "dist",
   "builds": [
     {
